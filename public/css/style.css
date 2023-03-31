@@ -1,0 +1,55 @@
+.middle{
+    text-align: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card{
+  align-content: center;
+}
+#footer{
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding: 2%;
+}
+a{
+color:rgb(243, 237, 237);
+padding: 1% 1%;
+}
+.card-title {
+color: #262A56;
+}
+.card-text{
+color: #B8621B;
+}
+#song{
+    margin: 5%;
+}
+.lbl{
+    margin-top:  5px;
+}
+
+.tspecial{
+    background-color: #E3CCAE;
+}
+
+.pay{
+    background-color: #F0EEED;
+}
+.payc{
+    background-color: #19A7CE;
+}
+
+hr{
+    border-style: dotted none none none;
+    border-color: #7DB9B6;
+    border-width: 4px;
+    width: 100%;
+    
+}
+
+.cr{
+    padding-top: 3%;
+}
+

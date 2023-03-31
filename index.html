@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="public/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c740d2f5b4.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <title>Malbay Spotify PT</title>
+</head>
+
+<body >
+  <section class="bg-dark">
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand"
+        href="https://open.spotify.com/user/s401gqteluvekk6fktq59jx1p?si=a9nUITzETtG14RKlmbK5bw&nd=1">
+        <i class="fa-brands fa-spotify"></i>
+        Malbay Spotify</a>
+      
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link"  href="public/scripts/algorithm.py" target="_blank"><i class="fa-solid fa-code"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="public/contact.html" target="_blank">Contact</a>
+        </li>
+      </ul>
+      
+    </div>
+    </div>
+  </nav>
+</div>
+  <div class="bg-dark middle">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="card" style="width: 100%;">
+          <div class="card-body tspecial">
+            <h3 class="card-title" id="today"></h3>
+          </div>
+        </div>
+        <div class="card lbl" style="width: 100%;">
+          <div class="card-body pay">
+            <h5 class="card-title">Previous Payment</h5>
+            <p class="card-text" id="previous"></p>
+          </div>
+        </div>
+        <div class="card" style="width: 100%;">
+          <div class="card-body pay">
+            <h5 class="card-title"> 🕰️ Current Payment 🕰️</h5>
+            <p class="card-text" id="current"></p>
+          </div>
+        </div>
+        <div class="card" style="width: 100%;">
+          <div class="card-body pay">
+            <h5 class="card-title">Next Payment</h5>
+            <p class="card-text" id="next"></p>
+          </div>
+        </div>
+        <div class="card" style="width: 100%;">
+          <div class="card-body pay">
+            <p class="card-title" id="info"></p>
+          </div>
+        </div>
+        <div class="card" style="width: 100%;">
+          <div class="card-body pay">
+            <p class="card-title">The payment dates are between the [25th-30th] of each month.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12 ">
+        <div class="card lbl" style="width: 100%;">
+          <div class="card-body tspecial">
+            <h3 class="card-title">Random Music</h3>
+          </div>
+        </div>
+        <div id="song">
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="card" style="width: 100%;">
+          <div class="card-body tspecial">
+            <h3 class="card-title">Images That Could Be Album Covers</h3>
+          </div>
+        </div>
+        <br>
+        <div id="testimonials-slide" class="carousel slide" data-ride="carousel-">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="public/images/1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/images/2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/images/3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/images/4.jpg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="public/images/5.jpg" alt="Fifth slide">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-slide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonials-slide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12 playlist">
+        <div class="card tspecial" style="width: 100%;">
+          <div class="card-body tspecial">
+            <h3 class="card-title">Discover</h3>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-12">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/playlist/4ag45a3ibIp7GZQFuUHTAu?utm_source=generator&theme=0"
+              width="100%" height="100%" frameBorder="0" allowfullscreen="no"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+          </div>
+          <br>
+          <div class="col-lg-12">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/playlist/2HUBK11hDcrKJkDtUvuPPC?utm_source=generator" width="100%"
+              height="100%" frameBorder="0" allowfullscreen="no"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+  </div>
+  <footer id="footer">
+    <div>
+      <a href="https://www.linkedin.com/in/ledlyy/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://twitter.com/ledlyy"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/ledlyy"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/ledlyy"><i class="fa-brands fa-github"></i></a>
+      <a href="https://letterboxd.com/ledlyy/"><i class="fa-brands fa-imdb"></i></a>
+    </div>
+
+    <p class="cr">© Copyright ledlyy</p>
+    <p>All rights reserved by ledlyy</p>
+  </footer>
+  
+  
+
+
+  <script src="public/scripts/index.js"></script>
+</body>
+
+</html>
